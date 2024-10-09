@@ -1,0 +1,21 @@
+.navButton {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--mantine-color-text);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: var(--mantine-color-hover);
+}
+
+.navLabel {
+  margin-left: 10px;
+}

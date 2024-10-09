@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures the navbar fills the available vertical space */
+  width: 250px; /* Fixed width to match AppShell's navbar width */
+  transition: width 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Added collapsed state */
+.collapsed {
+  width: 80px; /* Reduced width when SideNav is collapsed */
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--mantine-color-text);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Changed from 50% to 100% */
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: var(--mantine-color-hover);
+}
+
+.navLabel {
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide labels when collapsed */
+.collapsed .navLabel {
+  opacity: 0;
+  pointer-events: none;
+}

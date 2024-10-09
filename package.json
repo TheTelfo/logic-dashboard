@@ -9,7 +9,10 @@
     "test": "jest",
     "lint": "eslint .",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss,md};'",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "why-react": "yarn why --pattern react",
+    "list-react": "yarn list --pattern react",
+    "outdated-react": "yarn outdated --pattern react"
   },
   "dependencies": {
     "@mantine/charts": "^7.13.2",
@@ -17,6 +20,8 @@
     "@mantine/form": "^7.13.2",
     "@mantine/hooks": "^7.13.2",
     "@mantine/notifications": "^7.13.2",
+    "@mantine/styles": "^6.0.22",
+    "@tabler/core": "^1.0.0-beta21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^2.12.7",
